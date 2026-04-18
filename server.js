@@ -104,7 +104,7 @@ initSocket(io);
 
 // Database connection
 const PORT = process.env.PORT || 5000;
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/bus_tracking_db';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://mailtopratheeshm_db_user:pratheesh1004@cluster0.yxao1qt.mongodb.net/?appName=Cluster0';
 
 mongoose.connect(MONGODB_URI)
 .then(() => {
