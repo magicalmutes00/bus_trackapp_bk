@@ -143,12 +143,12 @@ const sanitizeUser = (user) => {
 /**
  * Paginate query results
  */
-const paginate = (query, page = 1, limit = 10) => {
-  const skip = (page - 1) * limit;
+const paginate = (page = 1, limit = 10) => {
+  const skip = (parseInt(page, 10) - 1) * parseInt(limit, 10);
 
   return {
     skip,
-    limit: Math.min(limit, 100), // Max 100 items per page
+    limit: Math.min(parseInt(limit, 10), 100), // Max 100 items per page
     page: parseInt(page, 10)
   };
 };

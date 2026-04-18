@@ -116,7 +116,6 @@ const busSchema = new mongoose.Schema({
 });
 
 // Index for faster queries
-busSchema.index({ busNumber: 1 });
 busSchema.index({ assignedDriver: 1 });
 busSchema.index({ status: 1 });
 
