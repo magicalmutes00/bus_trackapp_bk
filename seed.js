@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 const User = require('./models/User');
 const Bus = require('./models/Bus');
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://gamerpratheesh18_db_user:pratheesh1004@cluster0.finmzuc.mongodb.net/?appName=Cluster0';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://mailtopratheeshm_db_user:pratheesh1004@cluster0.yxao1qt.mongodb.net/?appName=Cluster0';
 
 const demoUsers = [
   {
